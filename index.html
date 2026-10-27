@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Simon Tardif · Philosophy</title>
+<meta name="description" content="Simon Tardif, doctoral researcher in philosophy (École normale supérieure – PSL & Université Laval). Phenomenology of history, French and German philosophical anthropology, philosophy of the cognitive sciences.">
+<meta name="author" content="Simon Tardif">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Simon Tardif">
+<meta property="og:description" content="Simon Tardif, doctoral researcher in philosophy (École normale supérieure – PSL & Université Laval). Phenomenology of history, French and German philosophical anthropology, philosophy of the cognitive sciences.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>try{var t=localStorage.getItem("stl-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Simon Tardif", "jobTitle": "Doctoral researcher in philosophy", "email": "mailto:simon.tardif-loiselle@ens.psl.eu", "affiliation": [{"@type": "CollegeOrUniversity", "name": "École normale supérieure – PSL"}, {"@type": "CollegeOrUniversity", "name": "Université Laval"}], "knowsAbout": ["Phenomenology", "Philosophical anthropology", "Philosophy of cognitive science", "Heidegger", "Blumenberg"], "sameAs": ["https://theses.fr/s348478", "https://www.philosophiecontinentale.laboratoire.ulaval.ca/membres/simon-tardif-loiselle"]}</script>
+<style>
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/cormorant-garamond-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:swap;src:url("fonts/cormorant-garamond-latin-500-italic.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:600;font-display:swap;src:url("fonts/cormorant-garamond-latin-600-italic.woff2") format("woff2")}
+@font-face{font-family:"EB Garamond";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/eb-garamond-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"EB Garamond";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/eb-garamond-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"EB Garamond";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/eb-garamond-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"EB Garamond";font-style:italic;font-weight:500;font-display:swap;src:url("fonts/eb-garamond-latin-500-italic.woff2") format("woff2")}
+@font-face{font-family:"EB Garamond";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/eb-garamond-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"EB Garamond";font-style:italic;font-weight:600;font-display:swap;src:url("fonts/eb-garamond-latin-600-italic.woff2") format("woff2")}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+</style>
+<style>
+/* Layout: one long scholarly page, sections separated by meander bands; hero = kylix tondo portrait beside the name, cave hand stencils sprayed behind. */
+:root{
+  /* White-ground lekythos (light) */
+  --clay:#EAE0CB;        /* page ground */
+  --clay-2:#E1D4B9;      /* raised band */
+  --glaze:#1B1511;       /* black glaze, main ink */
+  --glaze-soft:#4A3D33;  /* secondary ink */
+  --terra:#A9481F;       /* terracotta, accent text */
+  --ochre:#C0782F;       /* cave ochre, ornament */
+  --purple:#6E2A22;      /* added purple-red */
+  --rule:#CDBB97;
+  --grain:.10;
+  --grain-blend:multiply;
+  --f-display:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+  --f-body:"EB Garamond",Garamond,Georgia,"Times New Roman",serif;
+  --s-0:1.0625rem; --s-1:1.25rem; --s-2:1.6rem; --s-3:2.3rem; --s-4:clamp(2.6rem,7vw,4.6rem);
+  --measure:66ch;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  /* Red-figure (dark) */
+  --clay:#16100C; --clay-2:#1F1712; --glaze:#EAD7B8; --glaze-soft:#BCA88C;
+  --terra:#D9773F; --ochre:#C9813A; --purple:#B5524A; --rule:#3A2C22;
+  --grain:.16; --grain-blend:screen; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --clay:#16100C; --clay-2:#1F1712; --glaze:#EAD7B8; --glaze-soft:#BCA88C;
+  --terra:#D9773F; --ochre:#C9813A; --purple:#B5524A; --rule:#3A2C22;
+  --grain:.16; --grain-blend:screen; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--clay);color:var(--glaze);font-family:var(--f-body);font-size:var(--s-0);line-height:1.6;
+  -webkit-font-smoothing:antialiased;font-variant-ligatures:common-ligatures oldstyle-nums}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:var(--grain);mix-blend-mode:var(--grain-blend);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .32 0 0 0 0 .2 0 0 0 1.1 -.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--clay)}
+a{color:inherit;text-decoration-color:var(--ochre);text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{color:var(--terra)}
+:focus-visible{outline:2px solid var(--terra);outline-offset:3px;border-radius:2px}
+.wrap{max-width:68rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:500;text-wrap:balance;line-height:1.1;margin:0}
+.label{font-family:var(--f-body);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--terra);font-weight:500}
+em,i{font-style:italic}
+
+/* Header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--clay) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+header.top .wrap{display:flex;align-items:center;gap:1.5rem;padding-block:.7rem}
+.mark{font-family:var(--f-display);font-size:1.3rem;font-weight:600;text-decoration:none;white-space:nowrap;letter-spacing:.01em}
+nav{flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav ul{display:flex;gap:1.3rem;list-style:none;margin:0;padding:0;justify-content:flex-end}
+nav a{text-decoration:none;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;color:var(--glaze-soft)}
+nav a:hover{color:var(--terra)}
+.theme-btn{background:none;border:1px solid var(--rule);color:var(--glaze-soft);border-radius:999px;font:inherit;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .7rem;cursor:pointer;white-space:nowrap}
+.theme-btn:hover{border-color:var(--terra);color:var(--terra)}
+@media (max-width:720px){header.top .wrap{flex-wrap:wrap;gap:.4rem 1rem}nav{order:3;flex-basis:100%}nav ul{justify-content:flex-start}.theme-btn{margin-left:auto}}
+
+/* Meander band */
+.meander{height:22px;color:var(--terra);opacity:.9}
+.meander svg{display:block;width:100%;height:22px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden}
+.hero .cave{position:absolute;inset:0;pointer-events:none;color:var(--ochre)}
+.hero .cave svg{position:absolute;opacity:.55}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:3rem;align-items:center;padding-block:4.5rem 4rem}
+.hero h1{font-size:var(--s-4);font-weight:500;letter-spacing:-.01em;margin:.6rem 0 1rem}
+.hero h1{white-space:nowrap}
+.hero h1 span{font-style:italic;color:var(--terra)}
+.hero .role{font-size:var(--s-1);color:var(--glaze-soft);max-width:34ch;margin:0 0 1.6rem;line-height:1.45}
+.hero .intro{max-width:var(--measure);margin:0}
+.tondo{position:relative;width:min(100%,25rem);aspect-ratio:1;justify-self:center;max-width:100%}
+.tondo svg.ring{position:absolute;inset:0;width:100%;height:100%;color:var(--glaze)}
+.tondo img{position:absolute;inset:13.5%;width:73%;height:73%;object-fit:cover;object-position:50% 50%;border-radius:50%;filter:saturate(.85) sepia(.12)}
+.tondo figcaption{position:absolute;bottom:-2rem;left:0;right:0;text-align:center;font-size:.85rem;font-style:italic;color:var(--glaze-soft)}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr;gap:3rem;padding-block:3rem}.tondo{width:min(100%,19rem);order:-1}.tondo figcaption{display:none}}
+
+/* Sections */
+section.block{padding-block:4.5rem}
+section.alt{background:var(--clay-2)}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:.2rem 1rem;align-items:end;margin-bottom:2.4rem}
+.sec-head .dots{grid-row:span 2;align-self:center;color:var(--terra)}
+.sec-head h2{font-size:var(--s-3)}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1rem}
+
+/* Research */
+.thesis{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:3rem}
+.thesis blockquote{margin:0 0 1.6rem;font-family:var(--f-display);font-size:var(--s-2);line-height:1.2;font-style:italic;color:var(--glaze)}
+.facts{display:grid;gap:1rem;align-content:start;border-left:1px solid var(--rule);padding-left:1.6rem}
+.facts dt{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--terra)}
+.facts dd{margin:0 0 .4rem}
+.facts .fi{display:block;margin-bottom:.7rem;line-height:1.5}
+.facts .fi:last-child{margin-bottom:0}
+.epi blockquote{margin:.3rem 0 0;font-family:var(--f-display);font-style:italic;font-size:1.2rem;line-height:1.4;color:var(--glaze)}
+.epi cite{display:block;margin-top:.8rem;font-style:normal;font-size:.88rem;line-height:1.45;color:var(--glaze-soft)}
+.names{display:flex;flex-wrap:wrap;gap:.4rem .5rem;margin:1.4rem 0 0;padding:0;list-style:none}
+.names li{border:1px solid var(--rule);border-radius:999px;padding:.12rem .7rem;font-size:.92rem}
+@media (max-width:820px){.thesis{grid-template-columns:1fr}.facts{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:1.4rem}}
+
+/* Tabs */
+.tabs{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:2rem;border-bottom:1px solid var(--rule)}
+.tab{background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;font-family:var(--f-display);font-size:1.35rem;padding:.3rem .2rem .5rem;margin-right:1.4rem;color:var(--glaze-soft);cursor:pointer}
+.tab[aria-selected="true"]{color:var(--glaze);border-bottom-color:var(--terra)}
+.tab .n{font-family:var(--f-body);font-size:.8rem;color:var(--terra);margin-left:.3rem;font-variant-numeric:lining-nums}
+
+/* Bibliography entries */
+.group{margin-bottom:2.6rem}
+.group h3{font-size:var(--s-1);font-weight:600;margin-bottom:1rem;display:flex;align-items:baseline;gap:.7rem}
+.group h3 small{font-family:var(--f-body);font-weight:400;font-size:.85rem;color:var(--glaze-soft)}
+ol.bib{list-style:none;margin:0;padding:0;display:grid;gap:1.15rem}
+ol.bib li{display:grid;grid-template-columns:4.5rem minmax(0,1fr);gap:1rem;max-width:58rem}
+.yr{font-variant-numeric:lining-nums tabular-nums;color:var(--terra);font-size:.95rem;padding-top:.12rem}
+.ttl{font-family:var(--f-display);font-size:1.28rem;line-height:1.25;font-weight:500;display:block}
+.src{color:var(--glaze-soft)}
+.status{display:inline-block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid currentColor;border-radius:2px;padding:0 .35rem;margin-left:.4rem;color:var(--purple);vertical-align:.12em;white-space:nowrap}
+@media (max-width:560px){ol.bib li{grid-template-columns:1fr;gap:.1rem}}
+
+/* Public writing */
+.pub-intro{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;align-items:baseline;margin-bottom:1.6rem}
+.pub-intro p{margin:0;max-width:52ch;color:var(--glaze-soft)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip{font:inherit;font-size:.85rem;font-variant-numeric:lining-nums;background:none;border:1px solid var(--rule);color:var(--glaze-soft);border-radius:999px;padding:.15rem .75rem;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--glaze);color:var(--clay);border-color:var(--glaze)}
+.press{columns:2 24rem;column-gap:3rem;list-style:none;margin:0;padding:0}
+.press li{break-inside:avoid;padding:.55rem 0;border-bottom:1px dotted var(--rule);display:grid;grid-template-columns:4.8rem minmax(0,1fr);gap:.8rem}
+.press .d{font-variant-numeric:lining-nums tabular-nums;color:var(--terra);font-size:.88rem;padding-top:.15rem}
+.press a{text-decoration:none;font-family:var(--f-display);font-size:1.15rem;line-height:1.25}
+.press a:hover{text-decoration:underline}
+.more{margin-top:1.6rem}
+
+/* Talks */
+ol.talks{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+ol.talks li{display:grid;grid-template-columns:7.5rem minmax(0,1fr) minmax(0,13rem);gap:1.4rem;padding:1.15rem 0;border-bottom:1px solid var(--rule)}
+ol.talks .when{font-variant-numeric:lining-nums tabular-nums;color:var(--terra);font-size:.95rem;padding-top:.15rem}
+ol.talks .ev{display:block;color:var(--glaze-soft);margin-top:.2rem}
+ol.talks .where{color:var(--glaze-soft);font-size:.95rem;padding-top:.15rem}
+@media (max-width:760px){ol.talks li{grid-template-columns:1fr;gap:.15rem}ol.talks .where{padding-top:0;font-style:italic}}
+
+/* Education */
+.edu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3rem 4rem}
+.edu h3{font-size:var(--s-1);font-weight:600;margin-bottom:1.1rem;padding-bottom:.4rem;border-bottom:1px solid var(--rule)}
+dl.cv{margin:0;display:grid;grid-template-columns:6.2rem minmax(0,1fr);gap:.9rem 1rem}
+dl.cv dt{font-variant-numeric:lining-nums tabular-nums;color:var(--terra);font-size:.92rem;padding-top:.1rem}
+dl.cv dd{margin:0}
+dl.cv b{font-weight:500;display:block}
+dl.cv span{color:var(--glaze-soft)}
+@media (max-width:820px){.edu{grid-template-columns:1fr}}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3rem;align-items:start}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin:1rem 0 0}
+.mail code{font-family:var(--f-display);font-size:clamp(1.25rem,3.4vw,1.75rem);user-select:all;overflow-wrap:anywhere}
+.copy{font:inherit;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;background:var(--glaze);color:var(--clay);border:0;border-radius:2px;padding:.35rem .8rem;cursor:pointer}
+.links{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+.links a{display:flex;justify-content:space-between;gap:1rem;text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:.6rem}
+.links a span:last-child{color:var(--terra)}
+@media (max-width:760px){.contact{grid-template-columns:1fr}}
+
+footer{padding-block:2.2rem 3rem;color:var(--glaze-soft);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <pattern id="key" width="24" height="22" patternUnits="userSpaceOnUse">
+      <path d="M0 19H24M2 19V3H20V15H8V7H16V11H12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="square"/>
+    </pattern>
+    <filter id="spray" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="14" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="4"/>
+    </filter>
+    <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="2" seed="9" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="3"/>
+    </filter>
+    <mask id="hand" maskUnits="userSpaceOnUse" x="-40" y="-40" width="180" height="210">
+      <rect x="-40" y="-40" width="180" height="210" fill="#fff"/>
+      <g fill="#000" filter="url(#rough)">
+        <ellipse cx="50" cy="84" rx="23" ry="27"/>
+        <rect x="31" y="30" width="10" height="44" rx="5" transform="rotate(-9 36 74)"/>
+        <rect x="44.5" y="20" width="10.5" height="50" rx="5"/>
+        <rect x="57.5" y="26" width="10" height="46" rx="5" transform="rotate(7 62 72)"/>
+        <rect x="68" y="42" width="8.5" height="36" rx="4.3" transform="rotate(17 72 78)"/>
+        <rect x="19" y="64" width="10" height="33" rx="5" transform="rotate(-50 24 92)"/>
+        <rect x="35" y="100" width="31" height="40"/>
+      </g>
+    </mask>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top">Simon Tardif</a>
+    <nav aria-label="Sections"><ul>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#talks">Talks</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour scheme">Red-figure</button>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="cave" aria-hidden="true">
+    <svg viewBox="-40 -40 180 210" style="width:15rem;left:-3.5rem;top:1.5rem;transform:rotate(-14deg)"><g mask="url(#hand)"><circle cx="50" cy="75" r="62" fill="currentColor" filter="url(#spray)"/></g></svg>
+    <svg viewBox="-40 -40 180 210" style="width:10rem;left:44%;bottom:-3rem;transform:rotate(18deg) scaleX(-1);opacity:.35"><g mask="url(#hand)"><circle cx="50" cy="75" r="62" fill="currentColor" filter="url(#spray)"/></g></svg>
+    <svg viewBox="0 0 220 30" style="width:14rem;right:3%;top:2rem;opacity:.6"><g fill="currentColor" filter="url(#spray)">
+      <circle cx="12" cy="15" r="7"/><circle cx="40" cy="12" r="7.5"/><circle cx="68" cy="16" r="7"/><circle cx="96" cy="13" r="7.5"/><circle cx="124" cy="16" r="6.5"/><circle cx="152" cy="13" r="7"/><circle cx="180" cy="15" r="7"/><circle cx="206" cy="13" r="6"/></g></svg>
+  </div>
+  <div class="wrap">
+    <div>
+      <div class="label">Phenomenology · Philosophical anthropology · Cognitive science</div>
+      <h1>Simon <span>Tardif</span></h1>
+      <p class="role">Doctoral researcher in philosophy at the École normale supérieure (PSL, Paris) and the Université Laval (Québec).</p>
+      <p class="intro">I work at the junction of the phenomenology of history (Heidegger, Schürmann, Blumenberg), French and German philosophical anthropology and the philosophy of the cognitive sciences (4E cognition, generative passages, etc.). My doctoral research, <i lang="fr">L’Archéologie du visible</i>, proposes an anthropologization of phenomenological description. Drawing on Blumenberg’s transgression of the <i lang="de">Anthropologieverbot</i>, on Sloterdijk’s insightful reading of the phenomenal structures of <i lang="de">Sein und Zeit</i>, and on Lambros Malafouris’s material engagement theory in cognitive archaeology, it examines the cognitive presuppositions of Husserl’s and Heidegger’s classical methods, and the historical and material conditions, down to the paleo-archaeological record, under which phenomena come to be described at all.</p>
+    </div>
+    <figure class="tondo" style="margin:0">
+      <svg class="ring" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="97" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="100" cy="100" r="91" fill="none" stroke="var(--terra)" stroke-width="8" stroke-dasharray="2.6 3.6"/>
+        <circle cx="100" cy="100" r="85.5" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray=".1 6.1" stroke-linecap="round"/>
+        <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      </svg>
+      <img src="portrait.jpg" alt="Portrait of Simon Tardif" width="800" height="800">
+    </figure>
+  </div>
+</div>
+
+<div class="meander" aria-hidden="true"><svg><rect width="100%" height="22" fill="url(#key)"/></svg></div>
+
+<!-- RESEARCH -->
+<section class="block" id="research">
+  <div class="wrap">
+    <div class="sec-head">
+      <svg class="dots" width="30" height="30" viewBox="0 0 26 26" aria-hidden="true"><path d="M2 24V2H24V19H7V7H19V14H12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
+      <span class="label">Doctoral project</span>
+      <h2>Research</h2>
+    </div>
+    <div class="thesis">
+      <div class="prose">
+        <blockquote lang="fr">L’Archéologie du visible : Anthropologisation de la description phénoménologique à l’aune des sciences cognitives</blockquote>
+        <p>The dissertation examines the historical, material and cognitive foundations of phenomenological description. It looks at the cognitive presuppositions built into the methods of Husserl and Heidegger, and at the cognitive bases of what those methods describe.</p>
+        <p>The project extends the critical line of German philosophical anthropology (Hans Blumenberg, Peter Sloterdijk) and draws on Lambros Malafouris’s material engagement theory from cognitive archaeology. Its anthropological lens bears on the forms and modes of phenomenological description, and not only on its content.</p>
+        <p>A second line of research concerns the relation between the naturalization of phenomenology and the “phenomenologization” of the cognitive sciences.</p>
+        <h3 class="label" style="margin-top:2rem">Research areas</h3>
+        <ul class="names" style="margin-top:.7rem">
+          <li>Phenomenology of history (Heidegger, Schürmann, Blumenberg)</li><li>French and German philosophical anthropology</li><li>Philosophy of the cognitive sciences</li>
+        </ul>
+        <h3 class="label" style="margin-top:1.4rem">Further interests</h3>
+        <ul class="names" style="margin-top:.7rem">
+          <li>French historical epistemology (Bachelard, Canguilhem, Foucault)</li><li>Philosophy of mind (4E cognition, mind-body problem)</li>
+        </ul>
+      </div>
+      <dl class="facts">
+        <div><dt>Institutions</dt><dd>École normale supérieure – PSL (Paris), in <i>cotutelle</i> with the Université Laval (Québec), 2022–2027</dd></div>
+        <div><dt>Supervisors</dt><dd>Christian Sommer (ENS / Archives Husserl de Paris)<br>Sophie-Jan Arrien (Université Laval)</dd></div>
+        <div><dt>Affiliations</dt><dd>UMR 8547 Pays germaniques – Transferts culturels<br>Laboratoire de philosophie continentale, Université Laval<br>Member, <span lang="fr">Société canadienne de philosophie continentale</span></dd></div>
+        <div class="epi"><dt>Epigraph</dt><dd><blockquote lang="fr">« Nous pensons en tout cas que le corps, lui, n’a d’autres lois que celle de sa physiologie et qu’il échappe à l’histoire. Erreur à nouveau ; il est pris dans une série de régimes qui le façonnent ; il est rompu à des rythmes de travail, de repos et de fêtes ; il est intoxiqué par des poisons — nourritures ou valeurs, habitudes alimentaires et lois morales tout ensemble ; il se bâtit des résistances. »</blockquote><cite lang="fr">Michel Foucault, « Nietzsche, la généalogie, l’histoire », in <i>Dits et écrits</i>, t. I : 1954–1975, Paris, Gallimard, 2001, p. 1015.</cite></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"><svg><rect width="100%" height="22" fill="url(#key)"/></svg></div>
+
+<!-- PUBLICATIONS -->
+<section class="block alt" id="publications">
+  <div class="wrap">
+    <div class="sec-head">
+      <svg class="dots" width="30" height="30" viewBox="0 0 26 26" aria-hidden="true"><path d="M2 24V2H24V19H7V7H19V14H12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
+      <span class="label">Writing</span>
+      <h2>Publications</h2>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Publication type">
+      <button class="tab" role="tab" id="tab-acad" aria-controls="panel-acad" aria-selected="true">Academic<span class="n">9</span></button>
+      <button class="tab" role="tab" id="tab-public" aria-controls="panel-public" aria-selected="false" tabindex="-1">Public writing<span class="n">45</span></button>
+      <button class="tab" role="tab" id="tab-ed" aria-controls="panel-ed" aria-selected="false" tabindex="-1">Editorial work<span class="n">3</span></button>
+    </div>
+
+    <div id="panel-acad" role="tabpanel" aria-labelledby="tab-acad">
+      <div class="group">
+        <h3>Forthcoming <small>accepted manuscripts</small></h3>
+        <ol class="bib" lang="fr">
+          <li><span class="yr">2027</span><div><span class="ttl">Les marqueurs paléo-archéologiques de la temporalité du Dasein</span><span class="src"><i>Philosophiques</i>, vol. 54.</span></div></li>
+          <li><span class="yr">2027</span><div><span class="ttl" lang="en">From Phenomenology to Fiction with Hans Blumenberg</span><span class="src">In <i lang="es">Hans Blumenberg: fenomenología y antropología</i>, Guillermo Escolar Editor, coll. <i lang="es">Fenomenología y metafísica</i>.</span></div></li>
+          <li><span class="yr">2027</span><div><span class="ttl">Le passage de la phénoménologie à la fiction chez Hans Blumenberg</span><span class="src"><i>Annales de phénoménologie</i>.</span></div></li>
+          <li><span class="yr">2027</span><div><span class="ttl">Les phénomènes sortent-ils du sol ? Les conditions matérielles du discours phénoménologique</span><span class="src">In <i>Phénoménologie de l’expression. À travers et par-delà le langage</i>, Paris, Vrin.</span></div></li>
+        </ol>
+      </div>
+      <div class="group">
+        <h3>Published</h3>
+        <ol class="bib" lang="fr">
+          <li><span class="yr">2025</span><div><span class="ttl">La théorie des systèmes dynamiques en tant que cogito d’appareil : La connaissance du biologique de Georges Canguilhem à René Thom</span><span class="src"><i>Phares</i>, vol. 25, p. 151–173.</span></div></li>
+          <li><span class="yr">2022</span><div><span class="ttl">Le privilège ontologique d’un étant parmi d’autres : Martin Heidegger, l’existence et le vivant</span><span class="src"><i>Ithaque</i>, vol. 30, p. 39–62.</span></div></li>
+          <li><span class="yr">2019</span><div><span class="ttl">Dans le propylée du Temple avec Heidegger : Penser la communauté à l’époque moderne</span><span class="src"><i>Pensées canadiennes</i>, vol. 17, p. 41–60.</span></div></li>
+        </ol>
+      </div>
+      <div class="group">
+        <h3>Under review</h3>
+        <ol class="bib" lang="fr">
+          <li><span class="yr">—</span><div><span class="ttl">Corporalité et histoire chez Martin Heidegger : Le cas d’une nouvelle réduction phénoménologique</span><span class="src">Submitted to <i lang="en">Heidegger Studies</i>.</span></div></li>
+          <li><span class="yr">—</span><div><span class="ttl">Gaston Bachelard, phénoménologue et anthropologue à son insu</span><span class="src">Submitted to <i lang="de">Phänomenologische Forschungen</i>.</span></div></li>
+        </ol>
+      </div>
+    </div>
+
+    <div id="panel-public" role="tabpanel" aria-labelledby="tab-public" hidden>
+      <div class="pub-intro">
+        <p>Essays, reviews and interviews written for <i lang="fr">Le Délit</i>, the French-language student newspaper of McGill University, where I served as philosophy editor (2017–2019).</p>
+        <div class="chips" id="yearChips" aria-label="Filter by year"></div>
+      </div>
+      <ul class="press" id="pressList" lang="fr"></ul>
+      <p class="more"><a href="https://www.delitfrancais.com/author/simontardif/" target="_blank" rel="noopener">Complete archive on <i lang="fr">Le Délit</i> (61 articles) ↗</a></p>
+    </div>
+
+    <div id="panel-ed" role="tabpanel" aria-labelledby="tab-ed" hidden>
+      <div class="group">
+        <ol class="bib">
+          <li><span class="yr">2026</span><div><span class="ttl">Special issue on philosophical anthropology</span><span class="src">Co-edited with Sophie-Jan Arrien and Anton Ajazi, <i lang="fr">Philosophiques</i>.<span class="status">In preparation</span></span></div></li>
+          <li><span class="yr">2024–25</span><div><span class="ttl">Varia editor</span><span class="src"><i lang="fr">Phares. Revue de philosophie</i>, Université Laval.</span></div></li>
+          <li><span class="yr">2017–19</span><div><span class="ttl">Philosophy editor</span><span class="src"><i lang="fr">Le Délit</i>, McGill University.</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"><svg><rect width="100%" height="22" fill="url(#key)"/></svg></div>
+
+<!-- TALKS -->
+<section class="block" id="talks">
+  <div class="wrap">
+    <div class="sec-head">
+      <svg class="dots" width="30" height="30" viewBox="0 0 26 26" aria-hidden="true"><path d="M2 24V2H24V19H7V7H19V14H12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
+      <span class="label">Conferences &amp; invited talks</span>
+      <h2>Talks</h2>
+    </div>
+    <ol class="talks">
+      <li><span class="when">22–24 Oct 2026</span><div><span class="ttl" lang="fr">Gaston Bachelard, phénoménologue et anthropologue à son insu</span><span class="ev">Annual Congress of the Canadian Society for Continental Philosophy</span></div><span class="where">Montréal, Canada</span></li>
+      <li><span class="when">21–24 Jul 2026</span><div><span class="ttl" lang="fr">La question de la technique et l’idée d’une corrélation entre phénomènes et matérialité dans la post-phénoménologie de Don Ihde</span><span class="ev" lang="fr">École d’été Marc Richir, 9<sup>e</sup> édition</span></div><span class="where">Dixmont, France</span></li>
+      <li><span class="when">14 Jul 2026</span><div><span class="ttl">What does it mean to “phenomenologize” cognitive sciences?</span><span class="ev" lang="de">Dienstagskolloquium: Phänomenologie und Psychiatrie, Universität Heidelberg</span></div><span class="where">Heidelberg, Germany</span></li>
+      <li><span class="when">2 Jul 2026</span><div><span class="ttl" lang="fr">Les phénomènes sortent-ils du sol ? La corrélation entre type matériel et clôture phénoménale</span><span class="ev" lang="fr">Colloque « L’expression et ses phénomènes », École normale supérieure</span></div><span class="where">Paris, France</span></li>
+      <li><span class="when">24 Jun 2026</span><div><span class="ttl">Was Dasein extended or scaffolded all along?</span><span class="ev">Copenhagen Summer School in Phenomenology and Philosophy of Mind, University of Copenhagen</span></div><span class="where">Copenhagen, Denmark</span></li>
+      <li><span class="when">16 Jun 2026</span><div><span class="ttl" lang="fr">Y a-t-il un « Dasein » dans la grotte ? Description phénoménologique, variation matérielle et dialectique générative</span><span class="ev" lang="fr">Colloque international sur l’anthropologie philosophique, École normale supérieure</span></div><span class="where">Paris, France</span></li>
+      <li><span class="when">18 Apr 2026</span><div><span class="ttl">From Phenomenology to Fiction with Hans Blumenberg</span><span class="ev" lang="es">Jornadas «&nbsp;Hans Blumenberg: fenomenología y antropología&nbsp;», Universitat de les Illes Balears</span></div><span class="where">Palma, Spain</span></li>
+      <li><span class="when">7 Apr 2026</span><div><span class="ttl" lang="fr">Faire l’épreuve de l’être. Le retour au corps chez Heidegger</span><span class="ev" lang="fr">Causerie du Laboratoire de philosophie continentale, Université Laval</span></div><span class="where">Québec, Canada</span></li>
+      <li><span class="when">11 Jun 2025</span><div><span class="ttl" lang="fr">« Le temps se temporalise seulement du fait que l’homme est » : Les marqueurs paléo-archéologiques de la temporalité du Dasein</span><span class="ev" lang="fr">Journées d’étude du groupe de travail interdisciplinaire des Archives Husserl de Paris et du Laboratoire de philosophie continentale</span></div><span class="where">Québec, Canada</span></li>
+      <li><span class="when">4 Jun 2025</span><div><span class="ttl" lang="fr">L’élaboration d’une « ontologie de la Nature » chez Maurice Merleau-Ponty et Roger Chambon</span><span class="ev" lang="fr">« Autour du concept de nature : de la phénoménologie à l’anthropologie », Congrès de la Société de philosophie du Québec</span></div><span class="where">Québec, Canada</span></li>
+      <li><span class="when">9 Apr 2025</span><div><span class="ttl" lang="fr">Qu’appelle-t-on « phénoménologisation » ? Quelques remarques sur les effets discursifs de la phénoménologie et la possibilité de sciences cognitives heideggériennes</span><span class="ev" lang="fr">Séminaire doctoral en anthropologie philosophique, ENS</span></div><span class="where">Paris, France</span></li>
+      <li><span class="when">3 Apr 2025</span><div><span class="ttl" lang="fr">Anthropologisation ou naturalisation ? Hans Blumenberg, les sciences cognitives et la transformation de la phénoménologie</span><span class="ev" lang="fr">Journée doctorale de l’École normale supérieure</span></div><span class="where">Paris, France</span></li>
+      <li><span class="when">22 Mar 2024</span><div><span class="ttl" lang="fr">L’ancrage historique et matériel des structures phénoménales : remarques sur l’être-au-monde de Heidegger</span><span class="ev" lang="fr">Journée de la recherche de l’ACEP, Université Laval</span></div><span class="where">Québec, Canada</span></li>
+      <li><span class="when">26 Jun 2023</span><div><span class="ttl" lang="fr">Vers une archéologie du Dasein : remarques sur une phénoménologie anthropologisée à la lumière de l’archéologie cognitive</span><span class="ev" lang="fr">Rencontres doctorales UMR 8547 – Pays germaniques</span></div><span class="where">Paris, France</span></li>
+      <li><span class="when">26 Feb 2022</span><div><span class="ttl" lang="fr">Que veut dire parler de l’existence en psychiatrie ? De la Daseinsanalyse à la psychiatrie énactive</span><span class="ev">Philopolis</span></div><span class="where">Montréal, Canada</span></li>
+      <li><span class="when">27 Feb 2021</span><div><span class="ttl" lang="fr">Pourquoi lisons-nous des œuvres du passé ? Heidegger et la tâche de la philosophie</span><span class="ev">Philopolis</span></div><span class="where">Montréal, Canada</span></li>
+      <li><span class="when">15 Feb 2020</span><div><span class="ttl" lang="fr">Phénoménologie de la pathologie : Heidegger et le problème du corps dans les <i lang="de">Zollikoner Seminare</i> (GA 89)</span><span class="ev">Philopolis</span></div><span class="where">Montréal, Canada</span></li>
+    </ol>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"><svg><rect width="100%" height="22" fill="url(#key)"/></svg></div>
+
+<!-- EDUCATION -->
+<section class="block alt" id="education">
+  <div class="wrap">
+    <div class="sec-head">
+      <svg class="dots" width="30" height="30" viewBox="0 0 26 26" aria-hidden="true"><path d="M2 24V2H24V19H7V7H19V14H12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
+      <span class="label">Curriculum vitae</span>
+      <h2>Education &amp; experience</h2>
+    </div>
+    <div class="edu">
+      <div>
+        <h3>Degrees</h3>
+        <dl class="cv">
+          <dt>2022–2027</dt><dd><b lang="fr">Doctorat en philosophie (cotutelle)</b><span>École normale supérieure – PSL &amp; Université Laval</span></dd>
+          <dt>2020–2022</dt><dd><b lang="fr">Maîtrise en philosophie</b><span lang="fr">Université du Québec à Montréal (UQAM)</span></dd>
+          <dt>2016–2019</dt><dd><b>Bachelor of Arts, Honours Philosophy, minor concentration in Classical Studies</b><span>McGill University</span></dd>
+          <dt>2014–2016</dt><dd><b lang="fr">Diplôme d’études collégiales (Histoire et civilisation)</b><span lang="fr">Collège de Bois-de-Boulogne</span></dd>
+        </dl>
+        <h3 style="margin-top:2.2rem">Research stay</h3>
+        <dl class="cv">
+          <dt>July 2026</dt><dd><b>Visiting researcher (4 weeks)</b><span>Section for Phenomenological Psychopathology and Psychotherapy, directed by Thomas Fuchs, <span lang="de">Universität Heidelberg</span></span></dd>
+        </dl>
+      </div>
+      <div>
+        <h3>Fellowships &amp; grants</h3>
+        <dl class="cv">
+          <dt>2025–2027</dt><dd><b>SSHRC Insight Development Grant</b><span>Contributor · CAD 67,600</span></dd>
+          <dt>2024–2026</dt><dd><b lang="fr">Bourse Citoyennes et citoyens du monde – Volet mobilité</b><span><span lang="fr">Fondation Famille Choquette</span> · CAD 25,000</span></dd>
+          <dt>2024</dt><dd><b>SSHRC Doctoral Comprehensive Exam Preparation Award</b><span><span lang="fr">Faculté des études supérieures et postdoctorales, Université Laval</span> · CAD 3,000</span></dd>
+          <dt>2023–2027</dt><dd><b>SSHRC Doctoral Fellowship</b><span>Social Sciences and Humanities Research Council of Canada · CAD 120,000</span></dd>
+          <dt>2022–2023</dt><dd><b lang="fr">Bourse doctorale Thomas-De Koninck</b><span><span lang="fr">Faculté de philosophie, Université Laval</span> · CAD 15,000</span></dd>
+          <dt>2021</dt><dd><b>Canada Graduate Scholarship – Master’s (Joseph-Armand Bombardier)</b><span>SSHRC · CAD 17,500</span></dd>
+        </dl>
+      </div>
+      <div>
+        <h3>Research &amp; teaching</h3>
+        <dl class="cv">
+          <dt>2026</dt><dd><b>Co-taught graduate seminar on phenomenology and the cognitive sciences</b><span>With Prof. Sophie-Jan Arrien, Université Laval: <span lang="fr">PHI-7706 Sujets spéciaux : Phénoménologie et sciences cognitives</span> (Winter 2026)</span></dd>
+          <dt>2024–2026</dt><dd><b>Research assistant to Prof. Sophie-Jan Arrien</b><span>Annotated bibliographies; syllabi and reading programmes for graduate seminars on phenomenology and philosophical anthropology, and on phenomenology and the cognitive sciences; co-wrote a SSHRC Insight Development Grant application. Université Laval</span></dd>
+          <dt>2024</dt><dd><b>Teaching assistant to Prof. Sophie-Jan Arrien</b><span>Heidegger (PHI-2132): weekly 90-minute workshops, grading. Université Laval</span></dd>
+          <dt>2021–2022</dt><dd><b>Research assistant to Prof. Denis Fisette</b><span>Annotated bibliographies; archival research on the <i lang="de">Philosophische Gesellschaft an der Universität zu Wien</i> (1888–1938). UQAM</span></dd>
+          <dt>2020–2021</dt><dd><b>CÉGEP teaching of philosophy and internships</b><span>Three special seminars and two teaching internships, <span lang="fr">Collège de Bois-de-Boulogne</span> and <span lang="fr">Collège Jean-de-Brébeuf</span></span></dd>
+        </dl>
+      </div>
+      <div>
+        <h3>Academic service</h3>
+        <dl class="cv">
+          <dt>2027</dt><dd><b>Organizer, research workshop</b><span><i lang="fr">Journées d’étude sur Schürmann</i>, Québec, June 2027</span></dd>
+          <dt>2026–2027</dt><dd><b>Student representative, Faculty Council</b><span lang="fr">Faculté de philosophie, Université Laval</span></dd>
+          <dt>2025–2027</dt><dd><b>Organizer, international conference series</b><span><i lang="fr">Histoire et pratiques de l’anthropologie philosophique</i> I, II and III (Québec 2025, Paris 2026, Québec 2027), bringing together the research working group of the <span lang="fr">Laboratoire de philosophie continentale</span> (Québec) and the Archives Husserl (Paris)</span></dd>
+          <dt>2024–2025</dt><dd><b>General coordinator, ACEP</b><span lang="fr">Association des chercheur(e)s étudiant(e)s en philosophie, Université Laval</span></dd>
+          <dt>2024–2025</dt><dd><b>Organizer, three reading circles</b><span><span lang="fr">Laboratoire de philosophie continentale</span>: a phenomenological rereading of Husserl’s <i>Kaizo</i> articles; a phenomenological-anthropological reading of Blumenberg’s <i lang="de">Beschreibung des Menschen</i> (2006); key texts on the naturalization of phenomenology</span></dd>
+          <dt>2024</dt><dd><b>Organizer, research workshop</b><span><span lang="fr">Journée de la recherche de l’Association des chercheur(e)s étudiant(e)s en philosophie (ACEP)</span>, Université Laval, March 2024</span></dd>
+          <dt>2022–2023</dt><dd><b>Doctoral representative and organizer of the research workshop</b><span>UMR 8547 Pays germaniques, ENS</span></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander" aria-hidden="true"><svg><rect width="100%" height="22" fill="url(#key)"/></svg></div>
+
+<!-- CONTACT -->
+<section class="block" id="contact">
+  <div class="wrap contact">
+    <div>
+      <div class="sec-head" style="margin-bottom:1rem">
+        <svg class="dots" width="30" height="30" viewBox="0 0 26 26" aria-hidden="true"><path d="M2 24V2H24V19H7V7H19V14H12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
+        <span class="label">Get in touch</span>
+        <h2>Contact</h2>
+      </div>
+      <p class="prose" style="margin:0">For invitations, collaborations or offprints, write to me at:</p>
+      <div class="mail">
+        <code id="email">simon.tardif-loiselle@ens.psl.eu</code>
+        <button class="copy" id="copyBtn" type="button">Copy</button>
+      </div>
+    </div>
+    <ul class="links">
+      <li><a href="https://theses.fr/s348478" target="_blank" rel="noopener"><span>Thesis record, theses.fr</span><span>↗</span></a></li>
+      <li><a href="https://www.philosophiecontinentale.laboratoire.ulaval.ca/membres/simon-tardif-loiselle" target="_blank" rel="noopener"><span lang="fr">Laboratoire de philosophie continentale</span><span>↗</span></a></li>
+      <li><a href="https://www.delitfrancais.com/author/simontardif/" target="_blank" rel="noopener"><span>Articles in <i lang="fr">Le Délit</i></span><span>↗</span></a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="meander" aria-hidden="true" style="opacity:.5"><svg><rect width="100%" height="22" fill="url(#key)"/></svg></div>
+  <div class="wrap" style="padding-top:1.6rem">
+    <span>© 2026 Simon Tardif</span>
+    <span>Paris · Québec · <a href="legal.html">Legal notice</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Public writing, Le Délit (title, ISO date, url path)
+  var D="https://www.delitfrancais.com/";
+  var press=[
+["Savons-nous qui nous sommes ?","2021-03-22","2021/03/22/savons-nous-encore-qui-nous-sommes/"],
+["Éloge du conservatisme philosophique","2021-02-01","2021/02/01/eloge-du-conservatisme-philosophique/"],
+["Clarum per obscurius","2020-09-21","2020/09/21/clarum-per-obscurius/"],
+["De la musique aux corps idéaux","2020-02-25","2020/02/25/de-la-musique-aux-corps-ideaux/"],
+["Quelques gouttes d’un sexe sacré","2019-11-25","2019/11/25/quelques-gouttes-dun-sexe-sacre/"],
+["Porter notre regard sur le pathologique","2019-11-19","2019/11/19/porter-notre-regard-sur-le-pathologique/"],
+["Regard sur le pathologique","2019-11-19","2019/11/19/regard-sur-le-pathologique/"],
+["Dérouter l’ignorance du pays","2019-10-22","2019/10/22/derouter-lignorance-du-pays/"],
+["Une culture qui souffre de nos égarements","2019-10-22","2019/10/22/une-culture-qui-souffre-de-nos-egarements/"],
+["O Fortuna","2019-10-08","2019/10/08/o-fortuna/"],
+["Quelques notes d’un marbre sacré","2019-10-08","2019/10/08/quelques-notes-dun-marbre-sacre/"],
+["Bilan annuel : Les contours d’une vie francophone mcgilloise se dessinent","2019-04-09","2019/04/09/bilan-annuel-les-contours-dune-vie-francophone-mcgilloise-se-dessinent/"],
+["Communauté et enracinement","2019-04-09","2019/04/09/communaute-et-enracinement/"],
+["Réhabilitation sociale : La perspective de la Maison du Père","2019-04-02","2019/04/02/rehabilitation-sociale-la-perspective-de-la-maison-du-pere/"],
+["Réhabilitation sociale : La perspective de l’Itinéraire","2019-04-02","2019/04/02/rehabilitation-sociale-la-perspective-de-litineraire/"],
+["Itinérance : Pendant ce temps, que fait Montréal ?","2019-04-02","2019/04/02/itinerance-pendant-ce-temps-que-fait-montreal/"],
+["D’une prison à une autre","2019-04-02","2019/04/02/dune-prison-a-une-autre/"],
+["Florilèges tardifs","2019-04-02","2019/04/02/florileges-tardifs-2/"],
+["Se mêler à l’étrangeté","2019-03-26","2019/03/26/se-meler-a-letrangete/"],
+["Florilèges tardifs","2019-02-26","2019/02/26/florileges-tardifs/"],
+["Le devenir de la culture québécoise n’appartient qu’à ses chantres","2019-02-26","2019/02/26/le-devenir-de-la-culture-quebecoise-nappartient-qua-ses-chantres/"],
+["« Il nous faut de la sensibilité »","2019-02-26","2019/02/26/il-nous-faut-de-la-sensibilite/"],
+["Le contrefort de nos intuitions","2019-01-22","2019/01/22/le-contrefort-de-nos-intuitions/"],
+["La face noire de la philosophie","2019-01-15","2019/01/15/la-face-noire-de-la-philosophie/"],
+["Suggestions de lecture 2019","2019-01-15","2019/01/15/suggestions-dhiver-2019/"],
+["Ô liberté et servitude volontaire","2018-11-26","2018/11/26/o-liberte-et-servitude-volontaire/"],
+["Nietzsche dans tous ses états","2018-11-20","2018/11/20/nietzsche-dans-tous-ses-etats/"],
+["La consécration du Rhin wagnérien","2018-11-13","2018/11/13/la-consecration-du-rhin-wagnerien/"],
+["Richard Wagner : le brûlant Cronos","2018-11-13","2018/11/13/richard-wagner-le-brulant-cronos/"],
+["Richard Wagner de retour à Montréal","2018-11-06","2018/11/06/richard-wagner-de-retour-a-montreal/"],
+["Peut-on tuer par compassion ?","2018-11-06","2018/11/06/peut-on-tuer-par-compassion/"],
+["La décroissance à l’horizon du désastre","2018-10-23","2018/10/23/la-decroissance-a-lhorizon-du-desastre/"],
+["La sagesse de l’herméneutique","2018-10-16","2018/10/16/de-lhermeneute-au-monde/"],
+["La suprématie américaine s’invite au Québec","2018-10-02","2018/10/02/la-suprematie-americaine-sinvite-au-quebec/"],
+["Une tendresse envers l’étrangeté","2018-10-02","2018/10/02/une-tendresse-envers-letrangete/"],
+["La bataille de Rosemont","2018-09-27","2018/09/27/la-bataille-de-rosemont/"],
+["Angoissant Martin Heidegger","2018-09-25","2018/09/25/angoissant-martin-heidegger/"],
+["Mythologie : l’écoblanchiment","2018-09-18","2018/09/18/mythologie-lecoblanchiment/"],
+["Ruba Ghazal et Québec solidaire : l’écologie authentique","2018-09-18","2018/09/18/ruba-ghazal-et-quebec-solidaire-lecologie-authentique/"],
+["Le débat électoral à Radio-Canada","2018-09-18","2018/09/18/le-debat-electoral-a-radio-canada/"],
+["L’environnement : un enjeu important ?","2018-09-14","2018/09/14/lenvironnement-un-enjeu-important/"],
+["La Tragédie de la culture","2018-09-11","2018/09/11/la-tragedie-de-la-culture/"],
+["Démystifier l’école philosophique","2018-09-04","2018/09/04/demystifier-lecole-philosophique/"],
+["Fuck la langue française","2018-04-10","2018/04/10/fuck-la-langue-francaise/"],
+["Pour une autre éducation","2016-11-01","2016/11/01/pour-une-autre-education/"]
+  ];
+  var M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var list=document.getElementById("pressList"), chips=document.getElementById("yearChips");
+  function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+  function render(y){
+    list.innerHTML=press.filter(function(p){return y==="all"||p[1].slice(0,4)===y}).map(function(p){
+      var d=p[1].split("-");
+      return '<li><span class="d">'+(+d[2])+' '+M[+d[1]-1]+' '+d[0]+'</span><a href="'+D+p[2]+'" target="_blank" rel="noopener">'+esc(p[0])+'</a></li>';
+    }).join("");
+    [].forEach.call(chips.children,function(c){c.setAttribute("aria-pressed",String(c.dataset.y===y))});
+  }
+  var years=["all"].concat(press.map(function(p){return p[1].slice(0,4)}).filter(function(v,i,a){return a.indexOf(v)===i}));
+  years.forEach(function(y){var b=document.createElement("button");b.type="button";b.className="chip";b.dataset.y=y;b.textContent=y==="all"?"All years":y;b.onclick=function(){render(y)};chips.appendChild(b)});
+  render("all");
+
+  // Tabs
+  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(t){tabs.forEach(function(x){var on=x===t;x.setAttribute("aria-selected",on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute("aria-controls")).hidden=!on})}
+  tabs.forEach(function(t,i){
+    t.addEventListener("click",function(){select(t)});
+    t.addEventListener("keydown",function(e){var k=e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0;if(k){var n=tabs[(i+k+tabs.length)%tabs.length];select(n);n.focus()}});
+  });
+
+  // Copy e-mail
+  var cb=document.getElementById("copyBtn");
+  cb.addEventListener("click",function(){
+    var t=document.getElementById("email").textContent;
+    function done(){cb.textContent="Copied";setTimeout(function(){cb.textContent="Copy"},1800)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(document.getElementById("email"));var s=getSelection();s.removeAllRanges();s.addRange(r)}
+    try{navigator.clipboard.writeText(t).then(done,fallback)}catch(e){fallback()}
+  });
+
+  // Theme: white-ground (light) / red-figure (dark)
+  var root=document.documentElement, btn=document.getElementById("themeBtn");
+  function isDark(){var a=root.getAttribute("data-theme");return a?a==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
+  function label(){btn.textContent=isDark()?"White-ground":"Red-figure"}
+  try{var saved=localStorage.getItem("stl-theme");if(saved)root.setAttribute("data-theme",saved)}catch(e){}
+  label();
+  btn.addEventListener("click",function(){var n=isDark()?"light":"dark";root.setAttribute("data-theme",n);try{localStorage.setItem("stl-theme",n)}catch(e){}label()});
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change",label);
+})();
+</script>
+</body>
+</html>
