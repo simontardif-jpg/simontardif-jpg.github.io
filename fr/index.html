@@ -20,7 +20,6 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<script>try{var t=localStorage.getItem("stl-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Simon Tardif", "url": "https://simon-tardif.com/", "image": "https://simon-tardif.com/portrait.jpg", "jobTitle": "Candidat au doctorat en philosophie", "email": "mailto:simon.tardif-loiselle@ens.psl.eu", "affiliation": [{"@type": "CollegeOrUniversity", "name": "École normale supérieure – PSL"}, {"@type": "CollegeOrUniversity", "name": "Université Laval"}], "knowsAbout": ["Phenomenology", "Philosophical anthropology", "Philosophy of cognitive science", "Heidegger", "Blumenberg"], "sameAs": ["https://theses.fr/s348478", "https://www.philosophiecontinentale.laboratoire.ulaval.ca/membres/simon-tardif-loiselle"]}</script>
 <style>
 @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2")}
@@ -632,9 +631,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
   var root=document.documentElement, btn=document.getElementById("themeBtn");
   function isDark(){var a=root.getAttribute("data-theme");return a?a==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
   function label(){btn.textContent=isDark()?"Fond blanc":"Figures rouges"}
-  try{var saved=localStorage.getItem("stl-theme");if(saved)root.setAttribute("data-theme",saved)}catch(e){}
+  try{localStorage.removeItem("stl-theme")}catch(e){}
   label();
-  btn.addEventListener("click",function(){var n=isDark()?"light":"dark";root.setAttribute("data-theme",n);try{localStorage.setItem("stl-theme",n)}catch(e){}label()});
+  btn.addEventListener("click",function(){var n=isDark()?"light":"dark";root.setAttribute("data-theme",n);label()});
   matchMedia("(prefers-color-scheme: dark)").addEventListener("change",label);
 })();
 </script>
