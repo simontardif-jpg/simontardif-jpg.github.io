@@ -314,7 +314,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
       <li><a href="#contact">Contact</a></li>
     </ul></nav>
     <a class="lang-btn" href="/fr/" hreflang="fr" lang="fr" title="Version française">FR</a>
-    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour scheme">Red-figure</button>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour scheme">Black ground</button>
   </div>
 </header>
 
@@ -666,7 +666,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
   // Theme: white-ground (light) / red-figure (dark)
   var root=document.documentElement, btn=document.getElementById("themeBtn");
   function isDark(){var a=root.getAttribute("data-theme");return a?a==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
-  function label(){btn.textContent=isDark()?"White-ground":"Red-figure"}
+  function label(){btn.textContent=isDark()?"White ground":"Black ground"}
   try{localStorage.removeItem("stl-theme")}catch(e){}
   label();
   btn.addEventListener("click",function(){var n=isDark()?"light":"dark";root.setAttribute("data-theme",n);label()});
